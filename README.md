@@ -1,4 +1,4 @@
-# interview-2
+# geukrak-interview
 
 구름톤 딥다이브 극樂 면접 스터디
 
