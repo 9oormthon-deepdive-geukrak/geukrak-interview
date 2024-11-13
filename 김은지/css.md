@@ -83,13 +83,55 @@
 
 ## pt
 
+- point, 일반 문서(워드 등)에서 많이 사용하는 단위
+
 # CSS 적용 우선순위 🔥🔥
+
+1. !import 키원드가 적용된 스타일
+2. inline 스타일
+3. ID 선택자
+4. class 선택자
+5. tag 선택자
+6. 전체 선택자
+
+### id와 class의 차이점
+
+- id - 전체 페이지에서 하나의 유일한 요소에 적용
+- class - 복수의 요소에 적용할 때 사용
 
 # CSS-in-JS에 대해서 설명해 주세요. 🔥
 
+- JS 코드 내에서 CSS를 작성하는 것
+
+### CSS-in-JS가 해결할 수 있는 문제점
+
+- Global namespace: 글로벌 공간에 선언된 이름의 명명 규칙 필요
+- Dependencies: CSS간의 의존 관계를 관리
+- Dead Code Elimination: 미사용 코드 검출
+- Minification: 클래스 이름의 최소화
+- Sharing Constants: JS와 CSS의 상태 공유
+- Non-deterministic Resolution: CSS 로드 우선 순위 이슈
+- Isolation: CSS와 JS의 상속에 따른 격리 필요 이슈
+
+[참고]
+
+- https://www.samsungsds.com/kr/insights/web_component.html
+
 # CSS 전처리기(CSS preprocessors)를 사용해보셨나요? 🔥
 
+### CSS 전처리기란?
+
+- CSS를 작성할 때 사용하는 스크립팅 언어
+- ex. Sass, LESS, Stylus, PostCSS
+
 ## 사용해봤다면 장점과 단점
+
+- 장점
+  - 개발자가 반복적인 작업을 줄이고, 더 구조화된 방식으로 스타일을 관리할 수 있음 (가독성, 재사용성 향상)
+    - ex. 색상이나 폰트 크기와 같은 값을 변수로 저장하여, 전체 문서에서 일관된 디자인 유지 가능
+  - 믹스인을 사용하여 코드의 중복을 줄이고, 상속 기능을 통해 스타일 일관성 유지 가능
+- 장점
+  - 전처리기를 위한 도구 필요 (웹에서 불가)
 
 # padding과 margin의 차이가 무엇인가요? 🔥
 
