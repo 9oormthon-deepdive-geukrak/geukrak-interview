@@ -135,6 +135,23 @@
 
 # padding과 margin의 차이가 무엇인가요? 🔥
 
+### CSS 박스 모델
+
+- 웹 페이지에서 요소들을 사각형 박스로 표현하는 방식
+- content, border, padding, margin 4개의 영역으로 이루어짐
+
 ## padding에 대하여
 
+- 요소의 content와 border 사이에 여백
+
 ## margin에 대하여
+
+- border 외부 여백
+
+### 마진 병합 현상
+
+- 인접한 블록 요소의 상하단 마진이 서로 겹치어 변합되는 것
+- 마진 중 큰 값을 가진 마진으로 병합
+- 해결 방법
+  - 부모 요소에 border 속성 혹은 padding 속성 추가 혹은 overflow: hidden 속성 적용
+  - 자식 요소에 display: inline-block 속성 추가
