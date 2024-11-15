@@ -107,3 +107,12 @@
   - 플러그인 퀄리티 차이
   - 생태계 다양성
   - 프레임워크 부재
+
+&nbsp;
+
+## padding과 margin의 차이가 무엇인가요?
+
+![padding과 margin](./images/padding-margin.png)
+
+- `padding`: content와 border 사이의 여백을 나타내는 영역
+- `margin`: border 바깥을 차지하는 영역
