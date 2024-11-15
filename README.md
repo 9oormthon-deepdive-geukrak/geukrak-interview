@@ -445,3 +445,14 @@
    ```
 
 3. 작성이 완료되면 main으로 Push 해주세요!
+
+## 🗂️ 기록물
+
+### HTML/CSS
+
+<details>
+<summary>16 CSS</summary>
+   
+[![CSS](https://github.com/user-attachments/assets/0d54b89a-d4fb-49d2-bb1a-399d379acf30)](https://www.figma.com/board/1BYi3uKzAd55wIUyb8ImDR/16-CSS?t=57oPMrvjwVKIxhjP-1)
+
+</details>
