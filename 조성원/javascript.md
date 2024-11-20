@@ -111,3 +111,53 @@
   - `var`를 이용하면 한 번 정의된 변수를 재정의할 수 있다.
 - 재할당
   - 재할당 가능한 변수만 만들 수 있다. → 상수처럼 쓰여야하는 값도 재할당이 가능한 값으로 정의된다.
+
+&nbsp;
+
+### `let` 키워드는 `var` 키워드와 어떤 점이 다른가요?
+
+- 블록 스코프
+  - 많은 언어에서 블록 스코프를 사용한다.
+  - 블록(`{}`) 바깥에서 사용하려고 하면 에러가 발생한다.
+  - `const`와 `let`을 사용해서 동일한 이름의 변수를 정의하여 사용하는 경우, 우선순위에 따라 가장 가까운 변수를 사용하게 된다.
+- 호이스팅
+  - 변수를 정의하기 전에 그 변수를 사용하려고 하면 참조 에러가 발생한다.
+  - 호이스팅 이후에 초기화하지 않는다. (TDZ)
+- 재정의
+  - `let`으로 정의된 변수는 재정의되지 않는다.
+
+### TDZ
+
+- 일시적 사각지대
+- 변수는 선언, 초기화, 할당의 3단계에 걸쳐 생성된다.
+  - 선언: 변수를 실행 컨텍스트의 변수 객체에 등록하는 단계
+  - 초기화: 실행 컨텍스트에 존재하는 변수 객체에 선언 단계의 변수를 위한 메모리를 만드는 단계
+  - 할당: 사용자가 `undefined`로 초기화된 메모리의 값을 다른 값으로 할당하는 단계
+- `var`로 선언된 변수는 선언과 초기화가 동시에 이루어진다.
+- `let`, `const`로 선언된 변수는 선언 단계와 초기화 단계가 분리되어 진행된다.
+
+  - 실행 컨텍스트에 변수를 등록했지만, 메모리가 할당되지 않아 접근이 불가능하다.
+  - V8 엔진 코드
+
+    ```c
+    // var
+    var->AllocateTo(VariableLocation::PARAMETER, index);
+
+    // const
+    VariableProxy* proxy =
+        DeclareBoundVariable(local_name, VariableMode::kConst, pos);
+    proxy->var()->set_initializer_position(position());
+
+    // let
+    VariableProxy* proxy =
+        DeclareBoundVariable(variable_name, VariableMode::kLet, class_token_pos);
+    proxy->var()->set_initializer_position(end_pos);
+    ```
+
+    - `var`와는 달리 `let`, `const`는 `set_initializer_position` 메소드를 통해 해당 코드의 위치를 의미하는 position 값만 정해준다.
+    - 선언은 되어 있지만 변수에 값을 담기 위한 메모리에 공간이 확보되지 않은 상태
+
+### `const` 키워드는 어떤 특징이 있나요?
+
+- `let`과 동일한 특징을 갖으나, 재할당되지 않는다.
+  - **재할당**만 되지 않을 뿐, `const`로 정의된 객체의 내부 속성값은 수정이 가능하다.
