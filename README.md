@@ -456,3 +456,27 @@
 [![CSS](https://github.com/user-attachments/assets/0d54b89a-d4fb-49d2-bb1a-399d379acf30)](https://www.figma.com/board/1BYi3uKzAd55wIUyb8ImDR/16-CSS?t=57oPMrvjwVKIxhjP-1)
 
 </details>
+
+### JavaScript
+
+<details>
+<summary>17 프로그래밍</summary>
+
+[![프로그래밍](https://github.com/user-attachments/assets/4d26e2c3-c156-4a4a-9efb-58d5a2cc472a)](https://www.figma.com/board/wiEQU1RU7cuoIuwMaVGq55/17-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D?node-id=0-1&t=RvbZksClMCDWtCYp-1)
+
+</details>
+
+<details>
+<summary>18 자바스크립트란</summary>
+
+[![자바스크립트란](https://github.com/user-attachments/assets/456768c9-6ea6-4701-b21e-637680ce01c5)](https://www.figma.com/board/M96xN2kVk8GG6EupryoBro/18-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%9E%80%3F?node-id=12014-55&t=Zm8CjWbV57IfBi0O-1)
+
+</details>
+
+<details>
+<summary>19 변수</summary>
+
+[![변수](https://github.com/user-attachments/assets/4c08266a-6553-4a09-bfcb-6e7407c37611)](https://www.figma.com/board/mJqMKPgboRP1RMt7jaHWuy/19-%EB%B3%80%EC%88%98?node-id=12014-55&t=Zm8CjWbV57IfBi0O-1)
+
+</details>
+
