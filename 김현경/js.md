@@ -546,3 +546,21 @@ String str = 'Hello';
   parseInt("42px");  // 42
   parseFloat("3.14"); // 3.14
   ```
+
+## 암묵적 타입 변환이 뭔가요?
+
+- 암묵적 타입 변환은 개발자가 명시적으로 타입을 변환하지 않아도 자바스크립트 엔진이 코드 문맥에 따라 데이터 타입을 자동으로 변환하는 것
+- 타입 강제라고도 함
+  ```
+  console.log(1 + '2'); // "12"
+  ```
+
+## truthy / falsy 한 값이 뭔가요?
+
+자바스크립트에서 Boolean 타입으로 암묵적 변환이 일어날 때, 참(True)처럼 간주되는 값과 거짓(False)처럼 간주되는 값을 각각 Truthy 값과 Falsy 값이라고 한다.
+
+- Truthy
+  - Falsy 값이 아닌 모든 값
+  - 숫자 1, 빈 배열 [], 빈 객체 {}, 문자열, Infinity
+- Falsy
+  - null, undefined, false, NaN, 0, -0, 0n, ""(빈 문자열), document.all
