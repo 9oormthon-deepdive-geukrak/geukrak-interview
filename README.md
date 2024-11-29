@@ -490,7 +490,8 @@
 <details>
 <summary>21 타입 변환과 단축 평가</summary>
 
-[![타입 변환과 단축 평가](https://github.com/user-attachments/assets/05b646d5-c604-42d3-96ba-3d7fb964026f)](https://www.figma.com/board/8gWkq6835K3XDkKwnd5NPx/21-%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98%EA%B3%BC-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80?node-id=0-1&node-type=canvas)
+[![타입 변환과 단축 평가](https://github.com/user-attachments/assets/1d47473b-72b9-4f8d-b0b0-fad82229e3e6)](https://www.figma.com/board/8gWkq6835K3XDkKwnd5NPx/21-%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98%EA%B3%BC-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80?node-id=0-1&node-type=canvas)
+
 
 </details>
 
