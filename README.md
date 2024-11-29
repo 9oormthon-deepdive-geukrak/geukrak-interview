@@ -480,3 +480,26 @@
 
 </details>
 
+<details>
+<summary>20 데이터 타입</summary>
+
+[![데이터 타입](https://github.com/user-attachments/assets/9cc04759-769e-4a21-83e4-2cb2b0d718a9)]
+(https://www.figma.com/board/NyeIphMjkCBOjzUu2B7bfI/20-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85?node-id=0-1&node-type=canvas)
+
+</details>
+
+<details>
+<summary>21 타입 변환과 단축 평가</summary>
+
+[![타입 변환과 단축 평가](https://github.com/user-attachments/assets/05b646d5-c604-42d3-96ba-3d7fb964026f)]
+(https://www.figma.com/board/8gWkq6835K3XDkKwnd5NPx/21-%ED%83%80%EC%9E%85%EB%B3%80%ED%99%98%EA%B3%BC-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80?node-id=0-1&node-type=canvas)
+
+</details>
+
+<details>
+<summary>22 배열</summary>
+
+[![배열](https://github.com/user-attachments/assets/1873932c-050b-4416-8b9c-0db3f81f4041)]
+(https://www.figma.com/board/M8CgflQkgr9M8NFMFYE4Kh/22-%EB%B0%B0%EC%97%B4?node-id=12014-55&node-type=section)
+
+</details>
