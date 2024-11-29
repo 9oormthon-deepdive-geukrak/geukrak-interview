@@ -389,3 +389,76 @@ tag`Hello, ${name}! You are ${age} years old.`;
   - 밀집되지 않아도 됨
   - 일반 배열보다 접근은 느리지만 삽입 삭제가 빠름
 
+## 배열의 메서드는 어떤 종류가 있나요?
+
+```js
+// 정적 메서드
+Array.from();
+Array.fromAsync();
+Array.isArray();
+Array.of();
+```
+
+```js
+// 인스턴스 메서드
+Array.prototype.at()
+Array.prototype.concat()
+Array.prototype.copyWithin()
+Array.prototype.entries()
+Array.prototype.every()
+Array.prototype.fill()
+Array.prototype.filter()
+Array.prototype.find()
+Array.prototype.findIndex()
+Array.prototype.findLast()
+Array.prototype.findLastIndex()
+Array.prototype.flat()
+Array.prototype.flatMap()
+Array.prototype.forEach()
+Array.prototype.includes()
+Array.prototype.indexOf()
+Array.prototype.join()
+Array.prototype.keys()
+Array.prototype.lastIndexOf()
+Array.prototype.map()
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.reduce()
+Array.prototype.reduceRight()
+Array.prototype.reverse()
+Array.prototype.shift()
+Array.prototype.slice()
+Array.prototype.some()
+Array.prototype.sort()
+Array.prototype.splice()
+Array.prototype[@@iterator]()
+Array.prototype.toLocaleString()
+Array.prototype.toReversed()
+Array.prototype.toSorted()
+Array.prototype.toSpliced()
+Array.prototype.toString()
+Array.prototype.unshift()
+Array.prototype.values()
+Array.prototype.with()
+```
+
+## 고차 함수에 대해서 아나요?
+
+- 함수를 인수로 전달받거나 함수를 반환하는 함수
+- 외부 상태의 변경이나 가변 데이터를 피하고 불변성을 지향하는 함수형 프로그래밍에 기반을 둠
+- 자바스크립트의 함수는 일급 객체이므로 함수를 값처럼 인수로 전달할 수 있으며, 반환할 수도 있다.
+
+### 함수형 프로그래밍이란
+
+- 순수 함수와 보조 함수의 조합을 통해 로직 내에 존재하는 조건문과 반복문을 제거하여 복잡성을 해결하고 변수의 사용을 억제하여 상태 변경을 피하려는 프로그래밍 패러다임
+
+## forEach 메서드와 map메서드의 차이점에 대해 알고 있나요?
+
+- 공통점
+  - 자신을 호출한 배열의 모든 요소를 순회하면서 인수로 전달받은 콜백 함수를 반복 호출
+- 차이점
+  - forEach
+    - undefined 반환
+  - map
+    - 콜백 함수의 반환값들로 구성된 새로운 배열 반환
+
