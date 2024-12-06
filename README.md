@@ -501,3 +501,31 @@
 [![배열](https://github.com/user-attachments/assets/1873932c-050b-4416-8b9c-0db3f81f4041)](https://www.figma.com/board/M8CgflQkgr9M8NFMFYE4Kh/22-%EB%B0%B0%EC%97%B4?node-id=12014-55&node-type=section)
 
 </details>
+
+<details>
+<summary>23 객체 리터럴</summary>
+
+[![객체 리터럴](https://github.com/user-attachments/assets/d18e4239-0925-4c8a-8d31-fd56ccdca553)](https://www.figma.com/board/mh67vLMthWCkoGYYNaZQK4/23-%EA%B0%9D%EC%B2%B4-%EB%A6%AC%ED%84%B0%EB%9F%B4?node-id=12014-55&node-type=section&t=SwSIWvmknQl1XCnz-0)
+
+</details>
+
+<details>
+<summary>24 원시 값과 객체 비교</summary>
+
+[![원시 값과 객체 비](https://github.com/user-attachments/assets/8233cca7-bb68-49ff-a3f3-694eec70473b)](https://www.figma.com/board/oQOrGnCkv5pS6D9ft76qRp/24-%EC%9B%90%EC%8B%9C-%EA%B0%92%EA%B3%BC-%EA%B0%9D%EC%B2%B4-%EB%B9%84%EA%B5%90?node-id=12014-55&node-type=section&t=w4yOhujsYVOfNEnB-0)
+
+</details>
+
+<details>
+<summary>25 함수</summary>
+
+[![함](https://github.com/user-attachments/assets/48870200-e4e4-4390-8c41-3553385e51fb)](https://www.figma.com/board/9rGtslUUh0hSxMgf9mJ7bQ/25-%ED%95%A8%EC%88%98?node-id=12014-55&node-type=section&t=8RJHCh6Os6xsomEw-0)
+
+</details>
+
+<details>
+<summary>26 스코프</summary>
+
+[![스코프](https://github.com/user-attachments/assets/1297ba9b-2e74-4e04-8ce9-723cf8313122)](https://www.figma.com/board/08mElIEdiXjTXXMT2UgNTg/26-%EC%8A%A4%EC%BD%94%ED%94%84?node-id=12014-55&node-type=section)
+
+</details>
