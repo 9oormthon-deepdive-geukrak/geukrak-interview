@@ -1146,3 +1146,72 @@ console.log(p1.sayHello()); // Hello, I'm Alice
 | **누가 가지고 있나요?** | 생성자 함수만 가짐                                      | 모든 객체가 가짐 (내부적으로 숨겨져 있음)         |
 | **어떻게 설정되나요?**  | 생성자 함수에서 개발자가 정의                           | 모든 객체에 자동으로 설정                         |
 | **어떻게 접근하나요?**  | `ConstructorFunction.prototype`                         | `Object.getPrototypeOf(obj)` 또는 `obj.__proto__` |
+
+# strict mode 🔥
+
+## strict mode가 뭔가요?
+
+- 자바스크립트 실행을 더 엄격하게 제한하는 기능
+- ES5에서 도입되었고 런타임시 코드의 잠재적인 오류를 더 빨리 찾아내고 안전하게 작성하도록 도와줌
+- 코드 최상단에 `"use strict";` 선언하거나 모듈 스크립트를 사용하면 활성화
+
+## strict mode를 통해 무엇을 예방할 수 있죠?
+
+- 암묵적 전역 변수 방지
+
+  - 변수를 선언하지 않고 값을 할당하면 ReferenceError 발생
+
+  ```
+  "use strict";
+  x = 10; // ReferenceError: x is not defined
+  ```
+
+- 변수, 함수, 매개변수의 삭제 금지
+
+  ```
+  "use strict";
+  let foo = 10;
+  delete foo; // SyntaxError: Delete of an unqualified identifier is not allowed
+  ```
+
+- 매개변수 이름 중복 금지
+
+  ```
+  "use strict";
+  function add(a, a) { // SyntaxError: Duplicate parameter name not allowed in this context
+    return a + a;
+  }
+  ```
+
+- `with`문 사용 금지
+
+  - `with`문은 스코프를 혼란스럽게하여 유지보수가 어려워짐
+
+  ```
+  "use strict";
+  with (Math) { // SyntaxError: Strict mode code may not include a with statement
+    console.log(PI);
+  }
+  ```
+
+- `this` 값의 암시적 변환 방지
+
+  - 함수에서는 `this`가 암시적으로 `window`를 가리키지 않고 `undefined`로 설정
+
+  ```
+  "use strict";
+  function myFunction() {
+    console.log(this); // undefined (기존에는 글로벌 객체 `window`)
+  }
+  myFunction();
+  ```
+
+- 읽기 전용 속성 수정 방지
+
+  - 객체 속성이 읽기 전용인 경우 수정하면 오류 발생
+
+  ```
+  "use strict";
+  const obj = Object.freeze({ x: 10 });
+  obj.x = 20; // TypeError: Cannot assign to read only property 'x'
+  ```
