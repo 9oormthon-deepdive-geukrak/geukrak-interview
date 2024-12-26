@@ -663,3 +663,45 @@ console.log(circle1); // Circle { radius: 5, getDiameter: [Function: getDiameter
 - 일반 함수, 비순수 함수는 외부 상태에 의존하거나 외부 상태를 변경하는 함수
   - 실행하는 시점에 따라 결과가 달라질 수 있다.
   - 부수 효과가 있다.
+
+&nbsp;
+
+## Map과 Set 그리고 Lookup Table
+
+### Map
+
+- 키와 값의 쌍으로 이루어진 컬렉션
+- 객체를 포함한 모든 값을 키로 사용할 수 있다.
+
+```js
+const map1 = new Map([
+  ["key1", "value1"],
+  ["key2", "value2"],
+]);
+console.log(map1); // Map(2) { 'key1' => 'value1', 'key2' => 'value2' }
+
+const map2 = new Map([1, 2]); // TypeError: Iterator value 1 is not an entry object
+```
+
+&nbsp;
+
+### Set
+
+- 중복되지 않는 유일한 값들의 집합
+- 요소 순서에 의미가 없다.
+- 인덱스로 요소에 접근할 수 없다.
+
+```js
+const set1 = new Set([1, 2, 3, 3]);
+console.log(set1); // Set(3) { 1, 2, 3 }
+
+const set2 = new Set("hello");
+console.log(set2); // Set(3) { 'h', 'e', 'l', 'o' }
+```
+
+&nbsp;
+
+### Lookup Table
+
+- 주어진 연산에 대해 미리 계산된 결과들의 집합
+- 주어진 연산에 대한 결과를 계산하는 시간보다 빠르게 값을 취득할 수 있도록 사용되는 레퍼런스로 사용된다.
